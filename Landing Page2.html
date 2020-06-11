@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Landing Page</title>
+	<style type="text/css">
+
+		#header{
+			display: flex;
+			padding-left: 20px;
+			background-color: hsla(0,2%,54%,0.6);
+			margin: -8px; 
+			margin-bottom: 0px;			
+			padding-bottom: 10px;
+			
+			
+		}
+
+		nav li {
+			
+			display: inline;
+			line-height: 1.3em;
+			font-size: 30px;
+			padding: 10px;
+			font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+		}
+		
+
+		nav a{
+			text-decoration: none;
+			color: hsla(208,44%,86%,1.00);
+			
+		}
+		
+		
+
+		nav li:hover a:hover {
+			text-decoration: none;
+			color: hsla(0,0%,16%,0.4);
+			background-color: hsla(188,57%,72%,0.9);
+			padding: 35px;
+			border-bottom: hsla(208,44%,86%,1.00) solid 10px;
+		}
+		body {
+			text-align: center;
+			background-image: url("bg l.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			max-height: 100%;
+			margin:0;
+			padding: 20;
+			height: auto;
+			overflow: hidden;
+			position: relative;
+			
+		}
+		
+		#main{
+			max-height: 100%;
+			padding-bottom: -50px;
+		}
+		#send{
+			font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+			font-size: 20px;
+		}
+		#email{	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+		margin: 10px;
+		}
+		
+		
+		#form{
+			margin: 20px;
+		}
+		
+		#vdiv{
+			margin-top: 20px;
+		}
+		iframe{
+			border-radius: 5px;
+		}
+		
+		#items{
+			display: inline-flex;
+			border-top: 3px solid red;
+			border-bottom: 3px solid red;
+			margin-bottom: 20px;
+		}
+		.products{
+			
+			text-align: center;
+			padding: 10px;
+			margin: 25px;
+			width:100px;
+			height: 100px;
+			border-radius: 3px;
+			background-color: hsla(0,0%,100%,0.4);
+			color: black;
+			font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+			font-size: 15px;
+			font-weight: 600;
+					
+		}
+		.btn{
+			width:100%;
+			padding-bottom: 0px;
+			color: hsla(0,0%,0%,1.00);
+			background-color: hsla(59,96%,55%,1.00);
+			border-radius: 5px;
+			font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+			padding-bottom: 2px;
+			color: red;
+			font-weight: 900;
+		}
+		
+		@media (min-width : 482px)
+		{
+			font-size: 5px;
+		}
+		
+		#footer{
+			margin-bottom: 0px;
+			position: absolute;
+		}
+		
+
+	 </style>
+</head>
+<body>
+	<header id="header"> 
+		<img src="SuRfaRi Logo.png" id="header-img" height="80px" width="120px">
+
+		<nav id="nav-bar">
+			<ul>
+				<li><a href="#packages" class="nav-link">Packages</a></li><li> <a href="#lessons" class="nav-link">Lessons  </a> </li> <li><a href="#aboutUs" class="nav-link">About Us</a> </li></nav>
+
+	</header>
+<div id=main>
+	<div id="vdiv">
+		<iframe src="https://www.youtube.com/embed/XYZ46bGfZ08" height="320" width="420" frameborder="0" allowfullscreen></iframe>
+	</div>
+<section>
+		<form action="https://www.freecodecamp.com/email-submit" id="form">
+			<label for="email" id="send">Leave your email and we will get back to you</label>
+			<br>
+			<input type="email" id="email" name="email" placeholder="Enter your email" >
+			<input type="submit" id="submit" value="send">
+		</form> 
+		<br>
+	</section>
+
+<div id="items">
+	<section id="packages" class="products">View our range of offers<br><br><br><button class="btn" type="button">select</button></section>
+	
+	<section id="lessons" class="products">Meet our Accreddited SSA approved instructors<br><br><button class="btn" type="button">select</button></section>
+	
+	<section id="aboutUs" class="products">Find out what we're all about!<br><br><br><button class="btn" type="button">select</button></section>
+	</div>
+</div>
+		<footer id="footer">
+		<a href="Contact">Support</a>|<a href="help">Help</a>
+	</footer>
+</body>
+</html>
