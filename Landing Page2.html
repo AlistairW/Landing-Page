@@ -17,12 +17,27 @@
 @media (max-height: 800px){ 
     body {
   			  background-image: url("phone.jpg");
+  			  position: center;
      	 }
    	.nav-link{
 			text-decoration: none;
 			color: hsla(208,44%,86%,1.00);
 			font-size: 10px;
 			
+		}
+		nav li:hover a:hover {
+			text-decoration: none;
+			color: hsla(0,0%,16%,0.4);
+			background-color: hsla(188,57%,72%,0.9);
+			padding: 15px;
+			border-bottom: hsla(208,44%,86%,1.00) solid 10px;
+		}
+		nav li {
+			
+			display: inline;
+			line-height: 1.3em;
+			padding: 10px;
+			font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 		}
   }
 
